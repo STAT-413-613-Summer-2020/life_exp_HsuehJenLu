@@ -1,0 +1,11 @@
+---
+title: "life_exp_analysis"
+author: "HsuehJen Lu"
+date: "6/30/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
