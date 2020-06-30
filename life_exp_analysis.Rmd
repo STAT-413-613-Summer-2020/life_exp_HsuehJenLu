@@ -9,3 +9,19 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r}
+library(tidyverse)
+library(gapminder)
+```
+
+```{r}
+data("gapminder_unfiltered")
+sumdat <- gapminder_unfiltered %>%
+  group_by(year) %>%
+  filter(lifeExp == max(lifeExp)) %>%
+  ungroup() %>%
+  select(year, country, lifeExp) %>%
+  arrange(year) 
+sumdat
+```
+
