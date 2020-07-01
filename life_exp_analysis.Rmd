@@ -14,6 +14,7 @@ library(tidyverse)
 library(gapminder)
 ```
 
+#Arrange the max life exp of each year.
 ```{r}
 data("gapminder_unfiltered")
 sumdat <- gapminder_unfiltered %>%
